@@ -1,0 +1,394 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Londrina+Sketch&family=Permanent+Marker&family=Protest+Strike&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Londrina+Sketch&family=Permanent+Marker&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+:root {
+    --fonte-titulo: "Kanit", sans-serif;
+    --fonte-secundária: "Caveat", cursive;
+    --background-hover-color: #F2F2DC;
+    --color-Actinídios: #9A8FBF;
+    --color-braco: #9A8FBF;
+    --color-Lantanídeos:#13678A;
+    --color-Halogenios: #0583F2;
+    --color-nao-metais:#9AEBA3;
+    --color-Gases-nobres: #607EA6;
+    --color-outros-metais: #45C4B0;
+    --color-metais-de-transicao:#F26DCF;
+    --color-semimetais: #277365;
+    --color-metais-alcalinos: #BF4904;
+    --color-alcalino-terrosos: #ECF235;
+    --color-fundo:#F2F2F2;
+
+
+
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    
+    font-size: 4em;
+    text-align: center;
+    font-family: var(--fonte-secundária);
+    color:#1C1C26;
+
+}
+div#container {
+    overflow-x: auto;
+    position: relative;
+    height: 635px;
+    width: 1200px;
+    margin: 50%;
+    margin-bottom: 0px;
+}
+
+body {
+    margin-left: 10%;
+    font-family: var(--fonte-titulo);
+    background-color: var(--color-fundo);
+}
+
+p {
+    width: 50px;
+}
+
+td:hover {
+    border: 1px solid rgba(0, 0, 0, 0.500);
+}
+
+
+
+table#tabela-cabecalho{
+    border-collapse: collapse;
+    height: 130px;
+    width: 500px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin: -291.1px 0 0 -350px;
+}
+
+table#tabela-cabecalho td{
+    width: 115px;
+    border-radius: 5px 5px 0px 0px;
+}
+
+table#tabela-cabecalho td.dados-do-elemento{
+
+    background-color: var(--color-nao-metais);
+    font-size: 1.3em;
+}
+
+table#tabela-cabecalho td.dados-do-elemento:hover{
+    font-size: 1.6em;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.231);
+}
+
+table#tabela-cabecalho td.dados-do-elemento:hover + td.nomes-dados-do-elemento{
+    font-size: 1.6em;
+    text-shadow: 2px 2px 2.2px rgba(0, 0, 0, 0.139);
+    color: black;
+}
+
+table#tabela-cabecalho td.nomes-dados-do-elemento{
+    
+    padding-left: 100px;
+    text-align: left;
+    width: 245px;
+    color: white;
+}   
+
+table#tabela-cabecalho td.nome{
+    border-radius: 0px;
+}
+
+table#tabela-cabecalho td.numero{
+    padding-left: 20px;
+    text-align: left;
+    border-radius: 0px 0px 5px 5px;
+}
+
+
+
+
+table {
+    border-spacing: 3px;
+}
+
+table#tabela-principal {
+    margin: auto;
+}
+
+th {
+    font-size: 0.8em;
+    font-family: var(--fonte-titulo);
+    vertical-align: bottom;
+    padding-bottom: 6px;
+}
+
+td {
+    border: 1px solid rgba(0, 0, 0, 0.231);
+    padding: 3px;
+    border-radius: 5px;
+    font-size: 0.8em;
+    text-align: center;
+}
+
+.espaco-numero {
+    font-size: 0.7em;
+    font-weight: bolder;
+    text-align: left;
+    padding-bottom: 30px;
+    border: none;
+}
+
+.sigla-elemento{
+    text-align: center;
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+.nome-elemento {
+    padding-top: 4px;
+    padding-bottom: 3px;
+    font-size: 0.7em;
+}
+
+.numero-atomico {
+    text-align: left;
+    padding-left: 2px;
+    font-size: 0.9em;
+    font-weight: bold;
+}
+
+
+
+.metais-alcalinos{
+    background-color: var(--color-metais-alcalinos);
+    border: solid 1px white;
+}
+.metais-alcalinos:hover {
+    border: 1px solid rgba(0, 0, 0, 0.500);
+    background-color: var(--background-hover-color);
+    transition: 0.3s;
+}
+
+.alcalino-terrosos {
+    background-color: var(--color-alcalino-terrosos);
+    border: solid 1px white;
+}
+.alcalino-terrosos:hover {
+    border: 1px solid rgba(0, 0, 0, 0.500);
+    background-color: var(--background-hover-color);
+    transition: 0.3s;
+}
+
+.metais-de-transicao {
+    background-color: var(--color-metais-de-transicao);
+    border: solid 1px white;
+}
+.metais-de-transicao:hover {
+    border: 1px solid rgba(0, 0, 0, 0.500);
+    background-color: var(--background-hover-color);
+    transition: 0.3s;
+}
+
+.outros-metais {
+    background-color: var(--color-outros-metais);
+    border: solid 1px white;
+}
+.outros-metais:hover {
+    border: 1px solid rgba(0, 0, 0, 0.500);
+    background-color: var(--background-hover-color);
+    transition: 0.3s;
+}
+
+.Halogenios {
+    background-color: var(--color-Halogenios);
+    border: solid 1px white;
+}
+.Halogenios:hover {
+    border: 1px solid rgba(0, 0, 0, 0.500);
+    background-color: var(--background-hover-color);
+    transition: 0.3s;
+}
+
+.Gases-nobres {
+    background-color: var(--color-Gases-nobres);
+    border: solid 1px white;
+}
+.Gases-nobres:hover {
+    border: 1px solid rgba(0, 0, 0, 0.500);
+    background-color: var(--background-hover-color);
+    transition: 0.3s;
+}
+
+.nao-metais {
+    background-color: var(--color-nao-metais);
+    border: solid 1px white;
+}
+.nao-metais:hover {
+    border: 1px solid rgba(0, 0, 0, 0.500);
+    background-color: var(--background-hover-color);
+    transition: 0.3s;
+}
+
+.semimetais {
+    background-color: var(--color-semimetais);
+    border: solid 1px white;
+}
+.semimetais:hover {
+    border: 1px solid rgba(0, 0, 0, 0.500);
+    background-color: var(--background-hover-color);
+    transition: 0.3s;
+}
+
+.branco1 {
+    color: #1C1C26;
+}
+
+.branco2{
+    color: #1C1C26;
+}
+
+.branco1:hover {
+    background-color: var(--color-Lantanídeos);
+    color: black;
+    border: 1px solid rgba(0, 0, 0, 0.500);
+}
+
+.branco2:hover {
+    background-color: var(--color-braco);
+    color: black;
+    border: 1px solid rgba(0, 0, 0, 0.500);
+}
+
+
+
+table#tabela-secundaria {
+    margin-top: 20px;
+    margin-bottom: 40px;
+    margin: auto;
+}
+
+td.linha-branca {
+    background-color: var(--color-fundo); 
+    border: var(--color-fundo); 
+    height: 12px;
+}
+
+td.elementos-brancos {
+    background-color: var(--color-fundo); 
+    border: var(--color-fundo);
+   
+}
+
+.Lantanídeos {
+    background-color: var(--color-Lantanídeos);
+    border: solid 1px white;
+
+}
+.Lantanídeos:hover {
+    background-color: var(--background-hover-color);
+    transition: 0.3s;
+    border: 1px solid rgba(0, 0, 0, 0.500);
+}
+
+.Actinídios {
+    background-color: var(--color-Actinídios);
+    border: solid 1px white;
+}
+.Actinídios:hover {
+    background-color: var(--background-hover-color);
+    transition: 0.3s;
+    border: 1px solid rgba(0, 0, 0, 0.500);
+}
+
+
+table#legenda {
+    margin: auto;
+    margin-top: 20px;
+    min-height: 10px;
+    margin-bottom: 30px;
+}
+
+table#legenda td {
+    border: none;
+    min-width: 15px;
+}
+
+td.grupo {
+    text-align: left;
+    font-size: 15px;
+    padding-right: 100px;
+    color:black;
+    
+}
+
+
+
+td.nao-metais {
+    background-color: var(--color-nao-metais);
+  
+}
+
+td.semimetais {
+    background-color: var(--color-semimetais);
+  
+}
+
+td.outros-metais {
+    background-color: var(--color-outros-metais);
+   
+}
+
+td.lantanideos {
+    background-color: var(--color-Lantanídeos);
+   
+}
+
+td.metais-alcalinos {
+    background-color: var(--color-metais-alcalinos);
+    
+}
+
+
+
+td.metais-de-transicao {
+    background-color: var(--color-metais-de-transicao);
+   
+}
+
+td.gases-nobres {
+    background-color: var(--color-Gases-nobres);
+    
+}
+
+td.alcalino-terrosos {
+    background-color: var(--color-alcalino-terrosos);
+   
+}
+
+td.halogenios {
+    background-color: var(--color-Halogenios);
+    
+}
+
+td.actinidios {
+    background-color: var(--color-Actinídios);
+   
+}
+
+footer {
+    padding-top: 15px;
+    padding-bottom: 5px;
+    font-size: 1em;
+    text-align: center;
+    font-family: "Roboto", sans-serif;
+    color:#1C1C26;
+
+}
